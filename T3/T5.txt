@@ -1,0 +1,29 @@
+Vaihtolajittelu:
+
+1.kierros
+12 33  5 44  6 23
+ 5 33 12 44  6 23
+2.kierros
+ 5 12 33 44  6 23
+ 5  6 33 44 12 23
+3.kierros
+ 5  6 12 44 33 23
+4.kierros
+ 5  6 12 33 44 23
+ 5  6 12 23 44 33
+5.kierros
+ 5  6 12 23 33 44
+
+Shell -lajittelu
+
+1.kierros, välimatka 6/2=3
+12 33  5 44  6 23
+12  6  5 44 33 23
+2.kierros, välimatka 3/2=1  !!EI TOIMI NÄIN VAIKKA JAKO ON OIKEIN
+ 6 12  5 44 33 23
+ 6  5 12 44 33 23
+ 6  5 12 33 44 23
+ 6  5 12 33 23 44
+2.kierros, välimatka 3/2=2 !!NÄIN TOIMISI MUTTA JAKO ON VÄÄRIN
+ 5  6 12 44 33 23
+ 5  6 12 23 33 44
